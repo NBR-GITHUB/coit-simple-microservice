@@ -8,7 +8,7 @@ pipeline{
         }
         stage("Deploy"){
             steps{
-                sh "cd coit-frontend && sudo cp build/* /var/www/html/"
+                sh "cd coit-frontend && sudo cp -r build/* /var/www/html/"
             }
         }
         
